@@ -8,7 +8,7 @@ metadata:
 spec:
   replicas: 2
   strategy: 
-    type: recreate 
+    type: Recreate 
   selector:
     matchLabels:
       app: nginx
