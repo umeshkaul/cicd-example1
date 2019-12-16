@@ -14,7 +14,7 @@ RUN apt-get update && apt-get upgrade -y
 RUN apt-get install nginx -y
 COPY index.html /var/www/html/index.html
 #
-# Expose port 80
+# Expose port 80 - does not really map the port to the docker host
 EXPOSE 80
 #
 # Last is the actual command to start up NGINX within our Container
